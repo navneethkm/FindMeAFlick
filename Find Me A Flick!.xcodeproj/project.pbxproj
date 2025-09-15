@@ -289,7 +289,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5NS48NV79D;
+				DEVELOPMENT_TEAM = Q2YQ4PPBXK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FindMeAFlick/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Find Me A Flick!";
@@ -304,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = filmsStashAppNew.FindMeAFlick;
+				PRODUCT_BUNDLE_IDENTIFIER = filmsStashAppNew.FindMeAFlickNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,7 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5NS48NV79D;
+				DEVELOPMENT_TEAM = Q2YQ4PPBXK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FindMeAFlick/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Find Me A Flick!";
@@ -334,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = filmsStashAppNew.FindMeAFlick;
+				PRODUCT_BUNDLE_IDENTIFIER = filmsStashAppNew.FindMeAFlickNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
