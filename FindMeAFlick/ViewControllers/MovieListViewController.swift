@@ -1,15 +1,11 @@
 //
 //  MovieListViewController.swift
 //  FindMeAFlick
-//
-//  Created by P10 on 15/09/25.
-//
-
 
 import UIKit
 
 class MovieListViewController: UIViewController {
-    private let tableView = UITableView()
+    private var collectionView: UICollectionView!
     private var movies: [Movie] = []
     private var filteredMovies: [Movie] = []
     private let searchController = UISearchController(searchResultsController: nil)
@@ -21,23 +17,33 @@ class MovieListViewController: UIViewController {
         super.viewDidLoad()
         title = "Find Me A Flick!"
         view.backgroundColor = .systemBackground
-        setupTable()
+        setupCollectionView()
         setupSearch()
         fetchMovies()
     }
 
-    private func setupTable() {
-        tableView.register(MovieCell.self, forCellReuseIdentifier: MovieCell.reuseIdentifier)
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.rowHeight = 120
-        view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+    private func setupCollectionView() {
+        let layout = UICollectionViewFlowLayout()
+        let spacing: CGFloat = 12
+        let itemWidth = (view.frame.width - (spacing * 3)) / 2
+        layout.itemSize = CGSize(width: itemWidth, height: itemWidth * 1.5)
+        layout.minimumLineSpacing = spacing
+        layout.minimumInteritemSpacing = spacing
+        layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.register(MovieCell.self, forCellWithReuseIdentifier: MovieCell.reuseIdentifier)
+        collectionView.backgroundColor = .systemBackground
+        collectionView.delegate = self
+        collectionView.dataSource = self
+
+        view.addSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-           tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-           tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-           tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-           tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
     }
 
@@ -53,10 +59,8 @@ class MovieListViewController: UIViewController {
             switch result {
             case .success(let movies):
                 self?.movies = movies
-                self?.tableView.reloadData()
+                self?.collectionView.reloadData()
             case .failure(let error):
-                print("fetch error:", error)
-                // show a simple alert
                 self?.showError(error)
             }
         }
@@ -69,26 +73,26 @@ class MovieListViewController: UIViewController {
     }
 }
 
-// MARK: Table
-extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+// MARK: Collection View
+extension MovieListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return isSearching ? filteredMovies.count : movies.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MovieCell.reuseIdentifier, for: indexPath) as? MovieCell else {
-            return UITableViewCell()
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieCell.reuseIdentifier, for: indexPath) as? MovieCell else {
+            return UICollectionViewCell()
         }
-        let movie = isSearching ? filteredMovies[indexPath.row] : movies[indexPath.row]
+        let movie = isSearching ? filteredMovies[indexPath.item] : movies[indexPath.item]
         cell.configure(with: movie)
         return cell
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let movie = isSearching ? filteredMovies[indexPath.row] : movies[indexPath.row]
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let movie = isSearching ? filteredMovies[indexPath.item] : movies[indexPath.item]
         let detail = MovieDetailViewController(movie: movie)
-        navigationController?.pushViewController(detail, animated: true)
+        detail.modalPresentationStyle = .overFullScreen
+        present(detail, animated: true)
     }
 }
 
@@ -97,12 +101,10 @@ extension MovieListViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text, !text.isEmpty else {
             filteredMovies = []
-            tableView.reloadData()
+            collectionView.reloadData()
             return
         }
-        // For simple local filter on current page:
         filteredMovies = movies.filter { $0.title.lowercased().contains(text.lowercased()) }
-        tableView.reloadData()
-        // Optionally: call APIClient.shared.searchMovies(query: text, completion: ...) for global search
+        collectionView.reloadData()
     }
 }

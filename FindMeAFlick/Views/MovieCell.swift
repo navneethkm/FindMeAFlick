@@ -1,26 +1,24 @@
 //
 //  MovieCell.swift
 //  FindMeAFlick
-//
-//  Created by P10 on 15/09/25.
-//
-
 
 import UIKit
 
-class MovieCell: UITableViewCell {
+class MovieCell: UICollectionViewCell {
     static let reuseIdentifier = "MovieCell"
     private let posterImageView = UIImageView()
+    private let gradientLayer = CAGradientLayer()
     private let titleLabel = UILabel()
     private let ratingLabel = UILabel()
     private let genreLabel = UILabel()
-    private let Label = UILabel()
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setup()
     }
-    required init?(coder: NSCoder) { fatalError("init(coder:)") }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     private func setup() {
         posterImageView.contentMode = .scaleAspectFill
@@ -28,48 +26,64 @@ class MovieCell: UITableViewCell {
         posterImageView.layer.cornerRadius = 6
         posterImageView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(posterImageView)
+        
+        gradientLayer.colors = [
+                UIColor.clear.cgColor,
+                UIColor.black.withAlphaComponent(0.7).cgColor]
+        gradientLayer.locations = [0.0, 1.0]
+        posterImageView.layer.addSublayer(gradientLayer)
 
-        titleLabel.font = .systemFont(ofSize: 16, weight: .semibold)
-        titleLabel.numberOfLines = 2
+        titleLabel.font = .systemFont(ofSize: 18, weight: .bold)
+        titleLabel.textColor = .systemBackground
+        titleLabel.numberOfLines = 3
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(titleLabel)
+        posterImageView.addSubview(titleLabel)
 
-        ratingLabel.font = .systemFont(ofSize: 14)
+        ratingLabel.font = .systemFont(ofSize: 14, weight: .bold)
+        ratingLabel.textColor = .systemYellow
         ratingLabel.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(ratingLabel)
-        genreLabel.font = UIFont.italicSystemFont(ofSize: 14)
+        posterImageView.addSubview(ratingLabel)
+
+        genreLabel.font = .systemFont(ofSize: 12, weight: .bold)
         genreLabel.textColor = .systemPink
+        genreLabel.numberOfLines = 3
         genreLabel.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(genreLabel)
+        posterImageView.addSubview(genreLabel)
 
         NSLayoutConstraint.activate([
-            posterImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
-            posterImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            posterImageView.widthAnchor.constraint(equalToConstant: 80),
-            posterImageView.heightAnchor.constraint(equalToConstant: 100),
+            posterImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            posterImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            posterImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            posterImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
 
-            titleLabel.leadingAnchor.constraint(equalTo: posterImageView.trailingAnchor, constant: 12),
-            titleLabel.topAnchor.constraint(equalTo: posterImageView.topAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12),
+            titleLabel.leadingAnchor.constraint(equalTo: posterImageView.leadingAnchor, constant: 6),
+            titleLabel.trailingAnchor.constraint(lessThanOrEqualTo: posterImageView.trailingAnchor, constant: -6),
+            titleLabel.bottomAnchor.constraint(equalTo: genreLabel.topAnchor, constant: -2),
 
-            ratingLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-            ratingLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+            genreLabel.leadingAnchor.constraint(equalTo: posterImageView.leadingAnchor, constant: 6),
+            genreLabel.trailingAnchor.constraint(lessThanOrEqualTo: posterImageView.trailingAnchor, constant: -6),
+            genreLabel.bottomAnchor.constraint(equalTo: ratingLabel.topAnchor, constant: -10),
             
-            genreLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-            genreLabel.bottomAnchor.constraint(equalTo: posterImageView.bottomAnchor),
-            genreLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 8),
+            ratingLabel.leadingAnchor.constraint(equalTo: posterImageView.leadingAnchor, constant: 6),
+            ratingLabel.bottomAnchor.constraint(equalTo: posterImageView.bottomAnchor, constant: -6),
+            ratingLabel.topAnchor.constraint(equalTo: genreLabel.bottomAnchor, constant: -10),
+            
         ])
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        gradientLayer.frame = posterImageView.bounds
     }
 
     func configure(with movie: Movie) {
-
         titleLabel.text = movie.title
         if let rating = movie.voteAverage {
-            ratingLabel.text = "⭐️ \(String(format: "%.1f", rating))/10"
+            ratingLabel.text = "⭐️ \(String(format: "%.1f", rating))"
         } else {
             ratingLabel.text = "—"
         }
-        genreLabel.text = "Genre: \(movie.genreNames)"
+        genreLabel.text = movie.genreNames
         posterImageView.image = nil
         ImageLoader.shared.loadImage(from: movie.posterURL) { [weak self] img in
             self?.posterImageView.image = img

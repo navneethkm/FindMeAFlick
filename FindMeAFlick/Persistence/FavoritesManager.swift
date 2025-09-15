@@ -1,10 +1,5 @@
 //
 //  FavoritesManager.swift
-//  FindMeAFlick
-//
-//  Created by P10 on 15/09/25.
-//
-
 
 import Foundation
 

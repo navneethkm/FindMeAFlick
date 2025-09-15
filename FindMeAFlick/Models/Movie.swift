@@ -1,10 +1,5 @@
 //
-//  MovieResponse.swift
-//  FindMeAFlick
-//
-//  Created by P10 on 15/09/25.
-//
-
+//  Movie.swift
 
 import Foundation
 
@@ -28,6 +23,7 @@ struct Movie: Codable, Equatable {
     let posterPath: String?
     let releaseDate: String?
     let voteAverage: Double?
+    let voteCount: Int
     let genreIDs: [Int]?
 
     enum CodingKeys: String, CodingKey {
@@ -35,29 +31,29 @@ struct Movie: Codable, Equatable {
         case posterPath = "poster_path"
         case releaseDate = "release_date"
         case voteAverage = "vote_average"
+        case voteCount = "vote_count"
         case genreIDs = "genre_ids"
     }
     
-    // helper for poster url
     var posterURL: URL? {
         guard let path = posterPath else { return nil }
         return URL(string: "https://image.tmdb.org/t/p/w500\(path)")
     }
     
-    // helper for genres
     var genreNames: String {
         guard let genreIDs = genreIDs else { return "" }
         return genreIDs
             .compactMap { Genre.genreMap[$0] }
+            .prefix(2)                 
             .joined(separator: ", ")
     }
+
 }
 
 struct Genre: Codable {
     let id: Int
     let name: String
     
-    // Static TMDb genre mapping (v3 API)
     static let genreMap: [Int: String] = [
         28: "Action",
         12: "Adventure",

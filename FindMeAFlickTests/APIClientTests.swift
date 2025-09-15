@@ -7,7 +7,7 @@
 
 
 import XCTest
-@testable import FavoriteMovies
+@testable import FindMeAFlick
 
 final class URLProtocolStub: URLProtocol {
     static var stubbedData: Data?
@@ -45,7 +45,8 @@ class APIClientTests: XCTestCase {
              "poster_path": "/abc.jpg",
              "overview": "desc",
              "release_date": "2020-01-01",
-             "vote_average": 7.5
+             "vote_average": 7.5,
+             "vote_count": 23
             }
          ],
          "total_pages":1,

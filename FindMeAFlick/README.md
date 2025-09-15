@@ -12,7 +12,7 @@ Small iOS app (UIKit, MVC) that shows popular movies from TMDb. Users can view d
 ## Features
 - List popular movies (TMDb)
 - Movie detail view
-- Search (local filter + optional TMDb search)
+- Search (local filter)
 - Save favorites (UserDefaults)
 - Unit tests for networking
 - UI test skeletons

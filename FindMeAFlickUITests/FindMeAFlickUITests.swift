@@ -10,7 +10,7 @@ final class FavoriteMoviesUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         // Wait for table, tap first cell
-        let firstCell = app.tables.cells.element(boundBy: 0)
+        let firstCell = app.collectionViews.cells.element(boundBy: 0)
         XCTAssertTrue(firstCell.waitForExistence(timeout: 5))
         firstCell.tap()
         // check detail title exists

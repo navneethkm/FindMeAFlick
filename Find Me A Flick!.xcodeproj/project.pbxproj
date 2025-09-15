@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 04DFD7952E787E6400EAF7E8 /* Build configuration list for PBXProject "FindMeAFlick" */;
+			buildConfigurationList = 04DFD7952E787E6400EAF7E8 /* Build configuration list for PBXProject "Find Me A Flick!" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -292,6 +292,7 @@
 				DEVELOPMENT_TEAM = 5NS48NV79D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FindMeAFlick/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Find Me A Flick!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,6 +322,7 @@
 				DEVELOPMENT_TEAM = 5NS48NV79D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FindMeAFlick/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Find Me A Flick!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -536,7 +538,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04DFD7952E787E6400EAF7E8 /* Build configuration list for PBXProject "FindMeAFlick" */ = {
+		04DFD7952E787E6400EAF7E8 /* Build configuration list for PBXProject "Find Me A Flick!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04DFD7C62E787E6600EAF7E8 /* Debug */,
