@@ -1,13 +1,11 @@
 //
 //  README.md
 //  FindMeAFlick
-//
-//  Created by P10 on 15/09/25.
-//
-# FavoriteMovies
+
+# Find Me A Flick!
 
 ## Overview
-Small iOS app (UIKit, MVC) that shows popular movies from TMDb. Users can view details and save favorites locally.
+Minimalist iOS app (UIKit, MVC) that shows popular movies from TMDb. Users can view details and save favorites locally.
 
 ## Features
 - List popular movies (TMDb)
@@ -22,10 +20,4 @@ Small iOS app (UIKit, MVC) that shows popular movies from TMDb. Users can view d
 - **APIClient** handles networking (URLSession).
 - **FavoritesManager** persists favorites via `UserDefaults` (fast for this challenge).
 - **ImageLoader** with `NSCache` for poster images.
-
-## Setup
-1. Clone:
-   ```bash
-   git clone <repo-url>
-   cd FavoriteMovies
 
