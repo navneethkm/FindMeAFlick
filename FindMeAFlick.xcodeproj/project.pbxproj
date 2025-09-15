@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		04DFD7B12E787E6600EAF7E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04DFD7922E787E6400EAF7E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DFD7992E787E6400EAF7E8;
+			remoteInfo = FindMeAFlick;
+		};
+		04DFD7BB2E787E6600EAF7E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04DFD7922E787E6400EAF7E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DFD7992E787E6400EAF7E8;
+			remoteInfo = FindMeAFlick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04DFD79A2E787E6400EAF7E8 /* FindMeAFlick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMeAFlick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DFD7B02E787E6600EAF7E8 /* FindMeAFlickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMeAFlickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DFD7BA2E787E6600EAF7E8 /* FindMeAFlickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMeAFlickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		04DFD7C22E787E6600EAF7E8 /* Exceptions for "FindMeAFlick" folder in "FindMeAFlick" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 04DFD7992E787E6400EAF7E8 /* FindMeAFlick */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		04DFD79C2E787E6400EAF7E8 /* FindMeAFlick */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				04DFD7C22E787E6600EAF7E8 /* Exceptions for "FindMeAFlick" folder in "FindMeAFlick" target */,
+			);
+			path = FindMeAFlick;
+			sourceTree = "<group>";
+		};
+		04DFD7B32E787E6600EAF7E8 /* FindMeAFlickTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FindMeAFlickTests;
+			sourceTree = "<group>";
+		};
+		04DFD7BD2E787E6600EAF7E8 /* FindMeAFlickUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FindMeAFlickUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04DFD7972E787E6400EAF7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DFD7AD2E787E6600EAF7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DFD7B72E787E6600EAF7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04DFD7912E787E6400EAF7E8 = {
+			isa = PBXGroup;
+			children = (
+				04DFD79C2E787E6400EAF7E8 /* FindMeAFlick */,
+				04DFD7B32E787E6600EAF7E8 /* FindMeAFlickTests */,
+				04DFD7BD2E787E6600EAF7E8 /* FindMeAFlickUITests */,
+				04DFD79B2E787E6400EAF7E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04DFD79B2E787E6400EAF7E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04DFD79A2E787E6400EAF7E8 /* FindMeAFlick.app */,
+				04DFD7B02E787E6600EAF7E8 /* FindMeAFlickTests.xctest */,
+				04DFD7BA2E787E6600EAF7E8 /* FindMeAFlickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04DFD7992E787E6400EAF7E8 /* FindMeAFlick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DFD7C32E787E6600EAF7E8 /* Build configuration list for PBXNativeTarget "FindMeAFlick" */;
+			buildPhases = (
+				04DFD7962E787E6400EAF7E8 /* Sources */,
+				04DFD7972E787E6400EAF7E8 /* Frameworks */,
+				04DFD7982E787E6400EAF7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				04DFD79C2E787E6400EAF7E8 /* FindMeAFlick */,
+			);
+			name = FindMeAFlick;
+			packageProductDependencies = (
+			);
+			productName = FindMeAFlick;
+			productReference = 04DFD79A2E787E6400EAF7E8 /* FindMeAFlick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04DFD7AF2E787E6600EAF7E8 /* FindMeAFlickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DFD7C82E787E6600EAF7E8 /* Build configuration list for PBXNativeTarget "FindMeAFlickTests" */;
+			buildPhases = (
+				04DFD7AC2E787E6600EAF7E8 /* Sources */,
+				04DFD7AD2E787E6600EAF7E8 /* Frameworks */,
+				04DFD7AE2E787E6600EAF7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DFD7B22E787E6600EAF7E8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				04DFD7B32E787E6600EAF7E8 /* FindMeAFlickTests */,
+			);
+			name = FindMeAFlickTests;
+			packageProductDependencies = (
+			);
+			productName = FindMeAFlickTests;
+			productReference = 04DFD7B02E787E6600EAF7E8 /* FindMeAFlickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04DFD7B92E787E6600EAF7E8 /* FindMeAFlickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DFD7CB2E787E6600EAF7E8 /* Build configuration list for PBXNativeTarget "FindMeAFlickUITests" */;
+			buildPhases = (
+				04DFD7B62E787E6600EAF7E8 /* Sources */,
+				04DFD7B72E787E6600EAF7E8 /* Frameworks */,
+				04DFD7B82E787E6600EAF7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DFD7BC2E787E6600EAF7E8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				04DFD7BD2E787E6600EAF7E8 /* FindMeAFlickUITests */,
+			);
+			name = FindMeAFlickUITests;
+			packageProductDependencies = (
+			);
+			productName = FindMeAFlickUITests;
+			productReference = 04DFD7BA2E787E6600EAF7E8 /* FindMeAFlickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04DFD7922E787E6400EAF7E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					04DFD7992E787E6400EAF7E8 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					04DFD7AF2E787E6600EAF7E8 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 04DFD7992E787E6400EAF7E8;
+					};
+					04DFD7B92E787E6600EAF7E8 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 04DFD7992E787E6400EAF7E8;
+					};
+				};
+			};
+			buildConfigurationList = 04DFD7952E787E6400EAF7E8 /* Build configuration list for PBXProject "FindMeAFlick" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04DFD7912E787E6400EAF7E8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 04DFD79B2E787E6400EAF7E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04DFD7992E787E6400EAF7E8 /* FindMeAFlick */,
+				04DFD7AF2E787E6600EAF7E8 /* FindMeAFlickTests */,
+				04DFD7B92E787E6600EAF7E8 /* FindMeAFlickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04DFD7982E787E6400EAF7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DFD7AE2E787E6600EAF7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DFD7B82E787E6600EAF7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04DFD7962E787E6400EAF7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DFD7AC2E787E6600EAF7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DFD7B62E787E6600EAF7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04DFD7B22E787E6600EAF7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DFD7992E787E6400EAF7E8 /* FindMeAFlick */;
+			targetProxy = 04DFD7B12E787E6600EAF7E8 /* PBXContainerItemProxy */;
+		};
+		04DFD7BC2E787E6600EAF7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DFD7992E787E6400EAF7E8 /* FindMeAFlick */;
+			targetProxy = 04DFD7BB2E787E6600EAF7E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04DFD7C42E787E6600EAF7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NS48NV79D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindMeAFlick/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filmsStashAppNew.FindMeAFlick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04DFD7C52E787E6600EAF7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NS48NV79D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindMeAFlick/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filmsStashAppNew.FindMeAFlick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04DFD7C62E787E6600EAF7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5NS48NV79D;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04DFD7C72E787E6600EAF7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5NS48NV79D;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04DFD7C92E787E6600EAF7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NS48NV79D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filmsStashAppNew.FindMeAFlickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMeAFlick.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindMeAFlick";
+			};
+			name = Debug;
+		};
+		04DFD7CA2E787E6600EAF7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NS48NV79D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filmsStashAppNew.FindMeAFlickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMeAFlick.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindMeAFlick";
+			};
+			name = Release;
+		};
+		04DFD7CC2E787E6600EAF7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NS48NV79D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filmsStashAppNew.FindMeAFlickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMeAFlick;
+			};
+			name = Debug;
+		};
+		04DFD7CD2E787E6600EAF7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NS48NV79D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = filmsStashAppNew.FindMeAFlickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMeAFlick;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04DFD7952E787E6400EAF7E8 /* Build configuration list for PBXProject "FindMeAFlick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DFD7C62E787E6600EAF7E8 /* Debug */,
+				04DFD7C72E787E6600EAF7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DFD7C32E787E6600EAF7E8 /* Build configuration list for PBXNativeTarget "FindMeAFlick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DFD7C42E787E6600EAF7E8 /* Debug */,
+				04DFD7C52E787E6600EAF7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DFD7C82E787E6600EAF7E8 /* Build configuration list for PBXNativeTarget "FindMeAFlickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DFD7C92E787E6600EAF7E8 /* Debug */,
+				04DFD7CA2E787E6600EAF7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DFD7CB2E787E6600EAF7E8 /* Build configuration list for PBXNativeTarget "FindMeAFlickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DFD7CC2E787E6600EAF7E8 /* Debug */,
+				04DFD7CD2E787E6600EAF7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04DFD7922E787E6400EAF7E8 /* Project object */;
+}
